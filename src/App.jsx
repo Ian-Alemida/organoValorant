@@ -1,13 +1,15 @@
 import logo from './logo.svg';
 import './App.css';
+import Banner from './Componentes/Banner/Banner';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
+        <Banner/>
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          teste <code>src/App.js</code> teste dnv.
         </p>
         <a
           className="App-link"
