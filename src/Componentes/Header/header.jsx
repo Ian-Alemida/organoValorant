@@ -1,11 +1,11 @@
 import "./header.css"
-import img from "./img.jpg"
+import Banner from "./banner.png"
 
-function Header ({titulo}){
+function Header (){
     return (
         <header>
             <h1>Blog Alquimico</h1>
-            <img src={img} alt="" />
+            <img src={Banner} alt="banner da pagina" />            
         </header>
     )
 }
