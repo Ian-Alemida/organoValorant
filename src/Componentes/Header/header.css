@@ -1,6 +1,6 @@
 header {
     padding: 1rem 0;
-    background-color: #fee094;
+    background-color: #111;
     text-align: center;
 }
 
@@ -9,8 +9,8 @@ header h1 {
 }
 
 header img{
-    max-height: 12rem;
-    max-width: 24rem;
+    max-height: 50vh;
+    max-width: 60vw;
     margin: 0 1rem;
     border-radius: 10px;
 }

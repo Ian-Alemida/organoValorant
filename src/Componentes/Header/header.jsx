@@ -1,11 +1,11 @@
 import "./header.css"
-import  banner from "./Zenitsu.webp"
+import img from "./img.jpg"
 
 function Header ({titulo}){
     return (
         <header>
             <h1>Blog Alquimico</h1>
-            <img src={banner} alt="banner da pagina"/>
+            <img src={img} alt="" />
         </header>
     )
 }
