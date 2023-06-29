@@ -8,8 +8,7 @@ header h1 {
 }
 
 header img{
-    height: 30rem;
-    width: 55rem;
-    margin: 0 1rem;
-    border-radius: 10px;
+    height: 48rem;
+    width: 100%;
+    border-radius: 12px;
 }

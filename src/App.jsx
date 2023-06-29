@@ -3,7 +3,7 @@ import Header from "./Componentes/Header/header";
 import Main from "./Componentes/Main/main";
 import "./app.css";
 
-function App() {
+export default function App() {
   return (
       <>
       <Header/>
@@ -14,4 +14,4 @@ function App() {
   );
 }
 
-export default App;
+
