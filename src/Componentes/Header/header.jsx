@@ -1,7 +1,7 @@
 import "./header.css"
 import Banner from "./banner.jpg"
 
-function Header (){
+export default function Header (){
     return (
         <header>
             <h1>Hierós Blog</h1>
@@ -9,5 +9,3 @@ function Header (){
         </header>
     )
 }
-
-export default Header
