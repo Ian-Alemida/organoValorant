@@ -1,7 +1,8 @@
 .container{
     width: auto;
-    background-color: rgba(210, 210, 210, 0.8);
-    padding: 1rem;
-    margin: 1rem;
+    background-color: #6E619E;
+    padding: .5rem;
+    margin: 1rem 9vw;
     border-radius: 12px;
+    box-shadow: 3px 6px 12px rgba(0, 0, 0, 0.5);
 }
