@@ -1,6 +1,7 @@
 .container{
-    width: 400px;
-    height: 150px;
-    background-color: springgreen;
+    width: auto;
+    background-color: rgba(210, 210, 210, 0.8);
     padding: 1rem;
+    margin: 1rem;
+    border-radius: 12px;
 }
