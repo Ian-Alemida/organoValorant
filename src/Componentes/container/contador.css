@@ -1,0 +1,12 @@
+.button{
+    width: 80px;
+    height: 30px;
+    background-color: blueviolet;
+    border-color: transparent;
+    border-radius: 9px;
+}
+
+.button:hover{
+    background-color: rebeccapurple;
+    scale: 1.1;
+}
