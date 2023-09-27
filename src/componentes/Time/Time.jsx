@@ -1,5 +1,6 @@
 import React from 'react';
 import './time.css'
+import Colaborador from '../Colaborador/Colaborador';
 
 const Time = (props) => {
     const styles = [
@@ -10,6 +11,7 @@ const Time = (props) => {
     return (
         <div className='times' style={styles[0]}>
             <h3 style={styles[1]}>{props.nome}</h3>
+            <Colaborador/>
         </div>
     );
 }
