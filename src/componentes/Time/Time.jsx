@@ -9,12 +9,12 @@ const Time = ({ corPrimaria, corSecundaria, nome, colaboradores }) => {
     ]
 
     return (
-        <div className='times' style={styles[0]}>
+        (colaboradores.length > 0) && <section className='times' style={styles[0]}>
             <h3 style={styles[1]}>{nome}</h3>
             <div className="colaboradores">
                 {colaboradores.map( colaborador => <Colaborador nome={colaborador.nome} cargo={colaborador.cargo} imagem={colaborador.imagem}/>)}
             </div>
-        </div>
+        </section>
     );
 }
 
