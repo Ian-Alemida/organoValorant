@@ -1,10 +1,10 @@
 import React from 'react';
 import './colaborador.css'
 
-const Colaborador = ({ nome, cargo, imagem }) => {
+const Colaborador = ({ nome, cargo, imagem, color }) => {
     return (
         <div className='colaborador'>
-            <div className='cabecalho'>
+            <div className='cabecalho' style={ color }>
                 <img src={imagem} alt="imagem do colaborador" />
             </div>
             <div className='rodape'>
