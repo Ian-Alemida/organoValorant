@@ -197,6 +197,14 @@ function App() {
     console.log('deletando...')
   }
 
+  function mudarCorTime( cor, nome) {
+    setTimes(times.map(time => {
+        if(time.nome === nome) {
+          time.corSecundaria = cor;
+        }
+        return time;
+    }));
+  }
   return (
     <div>
       <Banner />
@@ -205,6 +213,7 @@ function App() {
         <h1>Minha organização</h1>
         {times.map((time, indice) =>
           <Time 
+            mudarCor={mudarCorTime}
             aoDeletar={deletarColaborador}
             key={indice}
             time={time}
