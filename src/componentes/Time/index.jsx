@@ -2,7 +2,7 @@ import Colaborador from '../Colaborador'
 import './time.css'
 import hexToRgba from 'hex-to-rgba';
 
-const Time = ({ time, colaboradores, aoDeletar, mudarCor }) => {
+const Time = ({ time, colaboradores, aoDeletar, mudarCor, aoFavoritar }) => {
 
     return (
         colaboradores.length > 0 && <section className='time' style={{ backgroundImage: 'url(/imagens/fundo.png)', backgroundColor: hexToRgba(time.cor, '0.5') }}>
@@ -11,6 +11,7 @@ const Time = ({ time, colaboradores, aoDeletar, mudarCor }) => {
             <div className='colaboradores'>
                 {colaboradores.map((colaborador, indice) => {
                     return <Colaborador
+                        aoFavoritar={aoFavoritar}
                         key={indice}
                         colaborador={colaborador}
                         corDeFundo={time.cor}
