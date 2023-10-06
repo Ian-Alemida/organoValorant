@@ -65,6 +65,7 @@ const Formulario = ({aoCadastrar, times, novoTime}) => {
                     aoAlterado={valor => setNomeTime(valor)}
                 />
                 <Campo
+                    type={'color'}
                     obrigatorio
                     label='cor' 
                     placeholder='Digite a cor do time '
