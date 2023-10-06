@@ -15,6 +15,9 @@ const Colaborador = ({ colaborador, corDeFundo, aoDeletar }) => {
         <div className="rodape">
             <h4>{colaborador.nome}</h4>
             <h5>{colaborador.cargo}</h5>
+            <div>
+                {}
+            </div>
         </div>
     </div>)
 }
