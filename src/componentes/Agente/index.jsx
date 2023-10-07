@@ -6,11 +6,12 @@ function Agente({ agente, corDeFundo, aoDeletar, aoFavoritar }) {
         aoFavoritar(agente.id)
     }
     return (
-        <div className="colaborador">
+        <div className="agente">
             <AiFillCloseCircle
                 size={27}
                 className="deletar"
-                onClick={() => aoDeletar(agente.id)} />
+                onClick={() => aoDeletar(agente.id)} 
+            />
             <div className="cabecalho" style={{ backgroundColor: corDeFundo }}>
                 <img src={agente.imagem} alt={agente.nome} />
             </div>
@@ -19,8 +20,8 @@ function Agente({ agente, corDeFundo, aoDeletar, aoFavoritar }) {
                 <h5>{agente.funcao}</h5>
                 <div className='favoritar'>
                     {agente.favorito
-                        ? <AiFillHeart size={30} onClick={favoritar} color='#ff0000' />
-                        : <AiOutlineHeart size={30} onClick={favoritar} />}
+                        ? <AiFillHeart size={33} onClick={favoritar} color='#ff0000' />
+                        : <AiOutlineHeart size={33} onClick={favoritar} />}
                 </div>
             </div>
         </div>)

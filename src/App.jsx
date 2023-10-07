@@ -130,10 +130,10 @@ function App() {
     },
     {
       id: uuidv4(),
-      favorito: false,
-      nome: 'JULIANA AMOASEI',
-      funcao: 'Desenvolvedora de software e instrutora',
-      imagem: 'https://www.alura.com.br/assets/img/lideres/juliana-amoasei.1647533644.jpeg',
+      favorito: true,
+      nome: 'OMEN',
+      funcao: 'Especialista em smokes, sua principal função é controlar o espaço ganhado por seu time',
+      imagem: 'https://images.hdqwalls.com/download/omen-valorant-4k-artwork-34-2880x1800.jpg',
       classe: classes[3].nome
     },
     {
