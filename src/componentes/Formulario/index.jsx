@@ -4,7 +4,7 @@ import Campo from '../Campo'
 import ListaSuspensa from '../ListaSuspensa'
 import './formulario.css'
 
-const Formulario = ({aoCadastrar, times, novoTime}) => {
+const Formulario = ({aoCadastrar, classes, novaClasse}) => {
 
     const [nome, setNome] = useState('')
     const [cargo, setCargo] = useState('')
@@ -47,14 +47,14 @@ const Formulario = ({aoCadastrar, times, novoTime}) => {
                 <ListaSuspensa 
                     obrigatorio={true}
                     label='Times'
-                    items={times} 
+                    items={classes} 
                     valor={time}
                     aoAlterado={valor => setTime(valor)}/>
                 <Botao texto='Criar card' />
             </form>
             <form className="formulario" onSubmit={(e) => {
                 e.preventDefault()
-                novoTime({ nome: nomeTime, cor: corTime})
+                novaClasse({ nome: nomeTime, cor: corTime})
             }}>
                 <h2>Preencha os dados para criar um novo time</h2>
                 <Campo
