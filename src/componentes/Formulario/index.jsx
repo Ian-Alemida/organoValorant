@@ -48,7 +48,7 @@ const Formulario = ({aoCadastrar, classes, novaClasse}) => {
                     placeholder='Informe o endereço da imagem '
                     aoAlterado={valor => setImagem(valor)}/>
                 <ListaSuspensa 
-                    obrigatorio={true}
+                    obrigatorio
                     label='Classes'
                     items={classes} 
                     valor={classe}

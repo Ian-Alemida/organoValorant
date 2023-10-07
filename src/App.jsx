@@ -7,7 +7,7 @@ import { v4 as uuidv4 } from 'uuid';
 
 function App() {
 
-  const [classes, setclasses] = useState([
+  const [classes, setClasses] = useState([
     {
       id: uuidv4(),
       nome: 'Duelista',
@@ -31,7 +31,7 @@ function App() {
     },
   ])
 
-  const inicial = [
+  const [agentes, setAgentes] = useState([
     {
       id: uuidv4(),
       favorito: false,
@@ -160,16 +160,14 @@ function App() {
       imagem: 'https://www.alura.com.br/assets/img/lideres/paulo-silveira.1647533644.jpeg',
       classe: classes[3].nome
     },
-  ]
-
-  const [agentes, setAgentes] = useState(inicial)
+  ])
 
   function deletarAgente(id) {
     setAgentes(agentes.filter(agente => agente.id !== id));
   }
 
   function mudarCorClasse( cor, id) {
-    setclasses(classes.map(classe => {
+    setClasses(classes.map(classe => {
         if(classe.id === id) {
           classe.cor = cor;
         }
@@ -178,7 +176,7 @@ function App() {
   }
 
   function criarNovaClasse (novaClasse) {
-    setclasses([...classes, {...novaClasse, id:uuidv4}])
+    setClasses([...classes, {...novaClasse, id:uuidv4}])
   }
 
   function changeFavorito (id){
@@ -193,7 +191,7 @@ function App() {
       <Formulario 
         novaClasse={criarNovaClasse}
         classes={classes.map(classe => classe.nome)}
-        aoCadastrar={agente => setAgentes([...agentes, agente])} 
+        aoCadastrar={novoAgente => setAgentes([...agentes, novoAgente])} 
       />
       <section className="times">
         <h1>Minha organização</h1>
