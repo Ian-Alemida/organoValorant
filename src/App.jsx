@@ -2,7 +2,7 @@ import { useState } from "react";
 import Banner from "./componentes/Banner";
 import Formulario from "./componentes/Formulario";
 import Rodape from "./componentes/Rodape";
-import Time from "./componentes/Time";
+import Classe from "./componentes/Classe";
 import { v4 as uuidv4 } from 'uuid';
 
 function App() {
@@ -198,7 +198,7 @@ function App() {
       <section className="times">
         <h1>Minha organização</h1>
         {classes.map((classe, indice) =>
-          <Time 
+          <Classe 
             aoFavoritar={changeFavorito}
             mudarCor={mudarCorClasse}
             aoDeletar={deletarAgente}

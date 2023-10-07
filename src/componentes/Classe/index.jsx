@@ -1,8 +1,8 @@
-import Colaborador from '../Colaborador'
-import './time.css'
+import Agente from '../Agente'
+import './classe.css'
 import hexToRgba from 'hex-to-rgba';
 
-const Time = ({ classe, agentes, aoDeletar, mudarCor, aoFavoritar }) => {
+function Classe({ classe, agentes, aoDeletar, mudarCor, aoFavoritar }) {
 
     return (
         agentes.length > 0 && <section className='time' style={{ backgroundImage: 'url(/imagens/fundo.png)', backgroundColor: hexToRgba(classe.cor, '0.5') }}>
@@ -10,18 +10,18 @@ const Time = ({ classe, agentes, aoDeletar, mudarCor, aoFavoritar }) => {
             <h3 style={{ borderColor: classe.cor }}>{classe.nome}</h3>
             <div className='colaboradores'>
                 {agentes.map((agente, indice) => {
-                    return <Colaborador
+                    return <Agente
                         aoFavoritar={aoFavoritar}
                         key={indice}
                         agente={agente}
                         corDeFundo={classe.cor}
-                        aoDeletar={aoDeletar}
-                    />
+                        aoDeletar={aoDeletar} 
+                    />;
                 })}
             </div>
         </section>
 
-    )
+    );
 }
 
-export default Time
+export default Classe

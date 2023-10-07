@@ -9,25 +9,24 @@ const Formulario = ({aoCadastrar, classes, novaClasse}) => {
     const [nome, setNome] = useState('')
     const [funcao, setFuncao] = useState('')
     const [imagem, setImagem] = useState('')
-    const [time, setTime] = useState('')
-    const [nomeTime, setNomeTime] = useState('')
-    const [corTime, setCorTime] = useState('')
+    const [classe, setClasse] = useState('')
+    const [nomeClasse, setNomeClasse] = useState('')
+    const [corClasse, setCorClasse] = useState('')
 
     const aoSubmeter = (evento) => {
         evento.preventDefault()
-        console.log('form enviado', nome, funcao, imagem, time )
         aoCadastrar({
             nome,
             funcao,
             imagem,
-            time
+            classe
         })
     }
 
     return (
         <section className="formulario-container">
             <form className="formulario" onSubmit={aoSubmeter}>
-                <h2>Preencha os dados para criar o card do colaborador.</h2>
+                <h2>Preencha os dados para criar o card do agente.</h2>
                 <Campo
                     obrigatorio={true}
                     label='Nome'
@@ -46,33 +45,33 @@ const Formulario = ({aoCadastrar, classes, novaClasse}) => {
                     aoAlterado={valor => setImagem(valor)}/>
                 <ListaSuspensa 
                     obrigatorio={true}
-                    label='Times'
+                    label='Classes'
                     items={classes} 
-                    valor={time}
-                    aoAlterado={valor => setTime(valor)}/>
-                <Botao texto='Criar card' />
+                    valor={classe}
+                    aoAlterado={valor => setClasse(valor)}/>
+                <Botao texto='Criar agente' />
             </form>
             <form className="formulario" onSubmit={(e) => {
                 e.preventDefault()
-                novaClasse({ nome: nomeTime, cor: corTime})
+                novaClasse({ nome: nomeClasse, cor: corClasse})
             }}>
-                <h2>Preencha os dados para criar um novo time</h2>
+                <h2>Preencha os dados para criar uma nova classe</h2>
                 <Campo
                     obrigatorio
                     label='Nome'
-                    placeholder='Digite o nome do time '
-                    valor={nomeTime}
-                    aoAlterado={valor => setNomeTime(valor)}
+                    placeholder='Digite o nome da classe '
+                    valor={nomeClasse}
+                    aoAlterado={valor => setNomeClasse(valor)}
                 />
                 <Campo
                     type={'color'}
                     obrigatorio
                     label='cor' 
-                    placeholder='Digite a cor do time '
-                    valor={corTime}
-                    aoAlterado={valor => setCorTime(valor)}
+                    placeholder='Digite a cor da classe '
+                    valor={corClasse}
+                    aoAlterado={valor => setCorClasse(valor)}
                 />
-                <Botao texto='Criar Novo time' />
+                <Botao texto='Criar Nova classe' />
             </form>
         </section>
     )
