@@ -21,6 +21,10 @@ const Formulario = ({aoCadastrar, classes, novaClasse}) => {
             imagem,
             classe
         })
+        setNome('')
+        setFuncao('')
+        setImagem('')
+        setClasse('')
     }
 
     return (
@@ -35,8 +39,8 @@ const Formulario = ({aoCadastrar, classes, novaClasse}) => {
                     aoAlterado={valor => setNome(valor)}/>
                 <Campo
                     obrigatorio={true}
-                    label='Cargo' 
-                    placeholder='Digite seu cargo '
+                    label='Função' 
+                    placeholder='Digite sua função '
                     valor={funcao}
                     aoAlterado={valor => setFuncao(valor)}/>
                 <Campo 
@@ -54,11 +58,12 @@ const Formulario = ({aoCadastrar, classes, novaClasse}) => {
             <form className="formulario" onSubmit={(e) => {
                 e.preventDefault()
                 novaClasse({ nome: nomeClasse, cor: corClasse})
+                setNomeClasse('')
             }}>
                 <h2>Preencha os dados para criar uma nova classe</h2>
                 <Campo
                     obrigatorio
-                    label='Nome'
+                    label='Nome Da Classe'
                     placeholder='Digite o nome da classe '
                     valor={nomeClasse}
                     aoAlterado={valor => setNomeClasse(valor)}
@@ -66,7 +71,7 @@ const Formulario = ({aoCadastrar, classes, novaClasse}) => {
                 <Campo
                     type={'color'}
                     obrigatorio
-                    label='cor' 
+                    label='Cor Da Classe' 
                     placeholder='Digite a cor da classe '
                     valor={corClasse}
                     aoAlterado={valor => setCorClasse(valor)}

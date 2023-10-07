@@ -19,8 +19,8 @@ function Agente({ agente, corDeFundo, aoDeletar, aoFavoritar }) {
                 <h5>{agente.funcao}</h5>
                 <div className='favoritar'>
                     {agente.favorito
-                        ? <AiFillHeart size={27} onClick={favoritar} color='#ff0000' />
-                        : <AiOutlineHeart size={27} onClick={favoritar} />}
+                        ? <AiFillHeart size={30} onClick={favoritar} color='#ff0000' />
+                        : <AiOutlineHeart size={30} onClick={favoritar} />}
                 </div>
             </div>
         </div>)
