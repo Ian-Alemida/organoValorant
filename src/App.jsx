@@ -11,7 +11,7 @@ function App() {
     {
       id: uuidv4(),
       nome: 'Duelista',
-      cor: '#D72404'
+      cor: '#A21F11'
     },
     {
       id: uuidv4(),
@@ -35,96 +35,136 @@ function App() {
     {
       id: uuidv4(),
       favorito: false,
-      nome: 'JULIANA AMOASEI',
-      funcao: 'Desenvolvedora de software e instrutora',
+      nome: "JETT",
+      funcao: "Duelista ágil e evasiva, sua principal função é entrar em combate direto e surpreender os inimigos de maneira rápida usando seu dash",
       imagem: 'https://www.alura.com.br/assets/img/lideres/juliana-amoasei.1647533644.jpeg',
       classe: classes[0].nome
     },
     {
       id: uuidv4(),
-      favorito: false,
-      nome: 'DANIEL ARTINE',
-      funcao: 'Engenheiro de Software na Stone Age',
+      favorito: true,
+      nome: "RAZE",
+      funcao: "Duelista explosiva e destrutiva, sua principal função é causar dano e abrir espaço usando sua C4 com suas granadas e foguetes",
       imagem: 'https://www.alura.com.br/assets/img/lideres/daniel-artine.1647533644.jpeg',
       classe: classes[0].nome
     },
     {
       id: uuidv4(),
       favorito: false,
-      nome: 'GUILHERME LIMA',
-      funcao: 'Desenvolvedor Python e JavaScript na Alura',
+      nome: "PHOENIX",
+      funcao: "Duelista ardente e confiante, sua principal função é liderar o ataque com suas bangs e molotov e se curar com suas habilidades de fogo",
       imagem: '	https://www.alura.com.br/assets/img/lideres/guilherme-lima.1647533644.jpeg',
       classe: classes[0].nome
     },
     {
       id: uuidv4(),
       favorito: false,
-      nome: 'PAULO SILVEIRA',
-      funcao: 'Hipster e CEO da Alura',
+      nome: "REYNA",
+      funcao: "Duelista vampira e implacável, sua principal função é abater os inimigos e se fortalecer com suas habilidades de roubo de vida e invencibilidade",
       imagem: 'https://www.alura.com.br/assets/img/lideres/paulo-silveira.1647533644.jpeg',
       classe: classes[0].nome
     },
     {
       id: uuidv4(),
       favorito: false,
-      nome: 'JULIANA AMOASEI',
-      funcao: 'Desenvolvedora de software e instrutora',
+      nome: 'YORU',
+      funcao: 'Duelista ilusionista e enganador, sua principal é infiltrar-se confundindo os adversários com suas de fendas dimensionais',
+      imagem: 'https://www.alura.com.br/assets/img/lideres/paulo-silveira.1647533644.jpeg',
+      classe: classes[0].nome
+    },
+    {
+      id: uuidv4(),
+      favorito: true,
+      nome: 'NEON',
+      funcao: 'Duelista elétrica e energética, sua principal função é correr e atirar raios de energia nos inimigos com suas habilidades de bioeletricidade',
+      imagem: 'https://www.alura.com.br/assets/img/lideres/paulo-silveira.1647533644.jpeg',
+      classe: classes[0].nome
+    },
+    {
+      id: uuidv4(),
+      favorito: false,
+      nome: "BREACH",
+      funcao: 'Iniciador poderoso e versátil, sua principal função é desestabilizar e atordoar os inimigos com suas habilidades sísmicas',
       imagem: 'https://www.alura.com.br/assets/img/lideres/juliana-amoasei.1647533644.jpeg',
       classe: classes[1].nome
     },
     {
       id: uuidv4(),
       favorito: false,
-      nome: 'DANIEL ARTINE',
-      funcao: 'Engenheiro de Software na Stone Age',
+      nome: "SOVA",
+      funcao: "Iniciador caçador e rastreador, sua principal função é revelar e eliminar os inimigos com suas habilidades de arco e flecha e seu drone",
       imagem: 'https://www.alura.com.br/assets/img/lideres/daniel-artine.1647533644.jpeg',
       classe: classes[1].nome
     },
     {
       id: uuidv4(),
-      favorito: false,
-      nome: 'GUILHERME LIMA',
-      funcao: 'Desenvolvedor Python e JavaScript na Alura',
+      favorito: true,
+      "nome": 'SKYE',
+      funcao: 'Iniciadora naturalista e curandeira, sua função é guiar o time e curar os aliados com suas habilidades de animais mágicos',
       imagem: '	https://www.alura.com.br/assets/img/lideres/guilherme-lima.1647533644.jpeg',
       classe: classes[1].nome
     },
     {
       id: uuidv4(),
       favorito: false,
-      nome: 'PAULO SILVEIRA',
-      funcao: 'Hipster e CEO da Alura',
+      nome: 'FADE',
+      funcao: 'Iniciador assustador e misterioso, sua principal função é rastrear e prender os inimigos com suas habilidades de medo',
       imagem: 'https://www.alura.com.br/assets/img/lideres/paulo-silveira.1647533644.jpeg',
       classe: classes[1].nome
     },
     {
       id: uuidv4(),
       favorito: false,
-      nome: 'JULIANA AMOASEI',
-      funcao: 'Desenvolvedora de software e instrutora',
+      nome: 'KAY/O',
+      funcao: 'Iniciador robótico e implacável, sua principal função é neutralizar as habilidades dos inimigos com seus dispositivos EMP',
+      imagem: 'https://www.alura.com.br/assets/img/lideres/paulo-silveira.1647533644.jpeg',
+      classe: classes[1].nome
+    },
+    {
+      id: uuidv4(),
+      favorito: false,
+      nome: 'GEKKO',
+      funcao: 'Iniciador com criaturas caóticas, sua função é usar suas criaturas para causar dano, controlar o espaço e plantar ou desarmar a Spike',
+      imagem: 'https://www.alura.com.br/assets/img/lideres/paulo-silveira.1647533644.jpeg',
+      classe: classes[1].nome
+    },
+    {
+      id: uuidv4(),
+      favorito: false,
+      nome: "Killjoy",
+      funcao: "Sentinela e especialista em tecnologia, sua principal função é usar seus dispositivos para proteger áreas e neutralizar os inimigos",
+      imagem: 'https://www.alura.com.br/assets/img/lideres/juliana-amoasei.1647533644.jpeg',
+      classe: classes[2].nome
+    },
+    {
+      id: uuidv4(),
+      favorito: true,
+      nome: "Cypher",
+      funcao: "Sentinela e especialista em vigilância, sua principal função é usar suas câmeras e armadilhas para obter informações dos inimigos",
       imagem: 'https://www.alura.com.br/assets/img/lideres/juliana-amoasei.1647533644.jpeg',
       classe: classes[2].nome
     },
     {
       id: uuidv4(),
       favorito: false,
-      nome: 'DANIEL ARTINE',
-      funcao: 'Engenheiro de Software na Stone Age',
-      imagem: 'https://www.alura.com.br/assets/img/lideres/daniel-artine.1647533644.jpeg',
-      classe: classes[2].nome
-    },
-    {
-      id: uuidv4(),
-      favorito: false,
-      nome: 'GUILHERME LIMA',
-      funcao: 'Desenvolvedor Python e JavaScript na Alura',
+      nome: "Sage",
+      funcao: "Sentinela e especialista em cura e defesa, sua função é usar sua magia para restaurar a vida de seus aliados e impedir o avanço dos inimigos",
       imagem: '	https://www.alura.com.br/assets/img/lideres/guilherme-lima.1647533644.jpeg',
       classe: classes[2].nome
     },
     {
       id: uuidv4(),
       favorito: false,
-      nome: 'PAULO SILVEIRA',
-      funcao: 'Hipster e CEO da Alura',
+      nome: 'Chamber',
+      funcao: 'Sentinela e especialista em armas, sua função é usar suas armas e seus teletransportes para abater os inimigos e se reposicionar',
+      imagem: 'https://www.alura.com.br/assets/img/lideres/paulo-silveira.1647533644.jpeg',
+      classe: classes[2].nome
+    },
+    {
+      id: uuidv4(),
+      favorito: false,
+      nome: "Deadlock",
+      funcao: "Sentinela e especialista em habilidades sônicas, sua função é usar seu Sensor Sônico e sua parede para detectar e desorientar os inimigos",
       imagem: 'https://www.alura.com.br/assets/img/lideres/paulo-silveira.1647533644.jpeg',
       classe: classes[2].nome
     },
@@ -132,31 +172,39 @@ function App() {
       id: uuidv4(),
       favorito: true,
       nome: 'OMEN',
-      funcao: 'Especialista em smokes, sua principal função é controlar o espaço ganhado por seu time',
+      funcao: 'Controlador e especialista em smokes, sua principal função é controlar o espaço ganhado por seu time e se teleportar pelo mapa',
       imagem: 'https://images.hdqwalls.com/download/omen-valorant-4k-artwork-34-2880x1800.jpg',
       classe: classes[3].nome
     },
     {
       id: uuidv4(),
       favorito: false,
-      nome: 'DANIEL ARTINE',
-      funcao: 'Engenheiro de Software na Stone Age',
+      nome: "Brimstone",
+      funcao: "Controlador e especialista em smokes, sua principal função é usar sua tecnologia orbital para apoiar seus aliados e bloquear a visão dos inimigos",
       imagem: 'https://www.alura.com.br/assets/img/lideres/daniel-artine.1647533644.jpeg',
       classe: classes[3].nome
     },
     {
       id: uuidv4(),
       favorito: false,
-      nome: 'GUILHERME LIMA',
-      funcao: 'Desenvolvedor Python e JavaScript na Alura',
+      nome: "Astra",
+      funcao: "Controladora e especialista no mundo astral, sua função é usar seu poder cósmico para criar barreiras, puxões e explosões estelares",
       imagem: '	https://www.alura.com.br/assets/img/lideres/guilherme-lima.1647533644.jpeg',
       classe: classes[3].nome
     },
     {
       id: uuidv4(),
       favorito: false,
-      nome: 'PAULO SILVEIRA',
-      funcao: 'Hipster e CEO da Alura',
+      nome: "Viper",
+      funcao: "Controladora e especialista em veneno, sua principal função é usar seu arsenal químico para criar zonas tóxicas que enfraquecem os inimigos",
+      imagem: 'https://www.alura.com.br/assets/img/lideres/paulo-silveira.1647533644.jpeg',
+      classe: classes[3].nome
+    },
+    {
+      id: uuidv4(),
+      favorito: true,
+      nome: "Harbor",
+      funcao: "Controlador e especialista em água, sua função é usar sua Onda, sua Bolha de Ar e sua Maré Alta para empurrar, prender e afogar os inimigos",
       imagem: 'https://www.alura.com.br/assets/img/lideres/paulo-silveira.1647533644.jpeg',
       classe: classes[3].nome
     },
