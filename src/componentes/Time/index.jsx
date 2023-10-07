@@ -2,18 +2,18 @@ import Colaborador from '../Colaborador'
 import './time.css'
 import hexToRgba from 'hex-to-rgba';
 
-const Time = ({ classe, colaboradores, aoDeletar, mudarCor, aoFavoritar }) => {
+const Time = ({ classe, agentes, aoDeletar, mudarCor, aoFavoritar }) => {
 
     return (
-        colaboradores.length > 0 && <section className='time' style={{ backgroundImage: 'url(/imagens/fundo.png)', backgroundColor: hexToRgba(classe.cor, '0.5') }}>
+        agentes.length > 0 && <section className='time' style={{ backgroundImage: 'url(/imagens/fundo.png)', backgroundColor: hexToRgba(classe.cor, '0.5') }}>
             <input value={classe.cor} onChange={e => mudarCor(e.target.value, classe.id)} type='color' className='input-cor' />
             <h3 style={{ borderColor: classe.cor }}>{classe.nome}</h3>
             <div className='colaboradores'>
-                {colaboradores.map((colaborador, indice) => {
+                {agentes.map((agente, indice) => {
                     return <Colaborador
                         aoFavoritar={aoFavoritar}
                         key={indice}
-                        colaborador={colaborador}
+                        agente={agente}
                         corDeFundo={classe.cor}
                         aoDeletar={aoDeletar}
                     />
