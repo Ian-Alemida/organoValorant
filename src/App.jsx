@@ -11,7 +11,7 @@ function App() {
     {
       id: uuidv4(),
       nome: 'Duelista',
-      cor: '#c70000'
+      cor: '#E02929'
     },
     {
       id: uuidv4(),

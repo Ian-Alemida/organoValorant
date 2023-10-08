@@ -1,5 +1,6 @@
 .card {
     width: 280px;
+    height: 360px;
     border-radius: 18px;
     box-shadow: 1px 5px 60px 0px #100a886b;
     position: relative;
@@ -44,12 +45,14 @@
 
 .card button {
     padding: 6px 21px;
-    margin: 12px auto;
     border-radius: 8px;
     border: none;
     color: #dddddd;
     font-weight: 600;
     background-color: black;
+    position: absolute;
+    bottom: 21px;
+    left: 102.5px;
 }
 
 .card button:hover {

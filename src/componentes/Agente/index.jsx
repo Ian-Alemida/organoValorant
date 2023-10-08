@@ -1,6 +1,5 @@
 import './agente.css'
 import { AiFillCloseCircle, AiOutlineHeart, AiFillHeart } from 'react-icons/ai'
-import hexToRgba from 'hex-to-rgba';
 
 function Agente({ agente, corDeFundo, aoDeletar, aoFavoritar }) {
     function favoritar() {
