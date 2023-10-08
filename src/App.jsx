@@ -37,7 +37,7 @@ function App() {
       favorito: false,
       nome: "JETT",
       funcao: "Duelista ágil e evasiva, sua principal função é entrar em combate direto e surpreender os inimigos de maneira rápida usando seu dash",
-      imagem: 'https://www.alura.com.br/assets/img/lideres/juliana-amoasei.1647533644.jpeg',
+      imagem: 'https://i.ytimg.com/vi/WZBd4stcHKo/maxresdefault.jpg',
       classe: classes[0].nome
     },
     {
@@ -45,7 +45,7 @@ function App() {
       favorito: true,
       nome: "RAZE",
       funcao: "Duelista explosiva e destrutiva, sua principal função é causar dano e abrir espaço usando sua C4 com suas granadas e foguetes",
-      imagem: 'https://www.alura.com.br/assets/img/lideres/daniel-artine.1647533644.jpeg',
+      imagem: 'https://i.ytimg.com/vi/LnP5peRI-x8/maxresdefault.jpg',
       classe: classes[0].nome
     },
     {
@@ -53,7 +53,7 @@ function App() {
       favorito: false,
       nome: "PHOENIX",
       funcao: "Duelista ardente e confiante, sua principal função é liderar o ataque com suas bangs e molotov e se curar com suas habilidades de fogo",
-      imagem: '	https://www.alura.com.br/assets/img/lideres/guilherme-lima.1647533644.jpeg',
+      imagem: '	https://mobimg.b-cdn.net/v3/fetch/05/05a6ee40acbbd4770cbee17013bafb01.jpeg',
       classe: classes[0].nome
     },
     {
@@ -242,7 +242,7 @@ function App() {
         aoCadastrar={novoAgente => setAgentes([...agentes, novoAgente])} 
       />
       <section className="times">
-        <h1>Minha organização</h1>
+        <h1>Classes do Valorant</h1>
         {classes.map((classe, indice) =>
           <Classe 
             aoFavoritar={changeFavorito}
