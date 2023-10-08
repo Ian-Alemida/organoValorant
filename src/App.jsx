@@ -11,7 +11,7 @@ function App() {
     {
       id: uuidv4(),
       nome: 'Duelista',
-      cor: '#A21F11'
+      cor: '#c70000'
     },
     {
       id: uuidv4(),
@@ -61,7 +61,7 @@ function App() {
       favorito: false,
       nome: "REYNA",
       funcao: "Duelista vampira e implacável, sua principal função é abater os inimigos e se fortalecer com suas habilidades de roubo de vida e invencibilidade",
-      imagem: 'https://www.alura.com.br/assets/img/lideres/paulo-silveira.1647533644.jpeg',
+      imagem: 'https://foni.club/uploads/posts/2023-02/1677114113_foni-club-p-art-reina-valorant-7.png',
       classe: classes[0].nome
     },
     {
@@ -69,7 +69,7 @@ function App() {
       favorito: false,
       nome: 'YORU',
       funcao: 'Duelista ilusionista e enganador, sua principal é infiltrar-se confundindo os adversários com suas de fendas dimensionais',
-      imagem: 'https://www.alura.com.br/assets/img/lideres/paulo-silveira.1647533644.jpeg',
+      imagem: 'https://images.squarespace-cdn.com/content/v1/5bb12626c46f6d5eaedb2e5f/1611187872698-04HN2USARRO5QEVNZ863/Valorant_Retake02.png',
       classe: classes[0].nome
     },
     {
@@ -77,7 +77,7 @@ function App() {
       favorito: true,
       nome: 'NEON',
       funcao: 'Duelista elétrica e energética, sua principal função é correr e atirar raios de energia nos inimigos com suas habilidades de bioeletricidade',
-      imagem: 'https://www.alura.com.br/assets/img/lideres/paulo-silveira.1647533644.jpeg',
+      imagem: 'https://www.goodnewspilipinas.com/wp-content/uploads/2022/01/valorant.jpg',
       classe: classes[0].nome
     },
     {
@@ -180,7 +180,7 @@ function App() {
       id: uuidv4(),
       favorito: false,
       nome: "Brimstone",
-      funcao: "Controlador e especialista em smokes, sua principal função é usar sua tecnologia orbital para apoiar seus aliados e bloquear a visão dos inimigos",
+      funcao: "Controlador especialista em smokes, sua função é usar sua tecnologia orbital para apoiar seus aliados e bloquear a visão dos inimigos",
       imagem: 'https://www.alura.com.br/assets/img/lideres/daniel-artine.1647533644.jpeg',
       classe: classes[3].nome
     },
@@ -204,7 +204,7 @@ function App() {
       id: uuidv4(),
       favorito: true,
       nome: "Harbor",
-      funcao: "Controlador e especialista em água, sua função é usar sua Onda, sua Bolha de Ar e sua Maré Alta para empurrar, prender e afogar os inimigos",
+      funcao: "Controlador e especialista em água, sua função é usar sua Onda, Bolha de Ar e sua Maré Alta para empurrar, prender e afogar os inimigos",
       imagem: 'https://www.alura.com.br/assets/img/lideres/paulo-silveira.1647533644.jpeg',
       classe: classes[3].nome
     },

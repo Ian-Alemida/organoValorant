@@ -1,30 +1,30 @@
 import './agente.css'
 import { AiFillCloseCircle, AiOutlineHeart, AiFillHeart } from 'react-icons/ai'
+import hexToRgba from 'hex-to-rgba';
 
 function Agente({ agente, corDeFundo, aoDeletar, aoFavoritar }) {
     function favoritar() {
         aoFavoritar(agente.id)
     }
     return (
-        <div className="agente">
+        <div className="card" style={{backgroundColor: corDeFundo}}>
             <AiFillCloseCircle
                 size={27}
                 className="deletar"
-                onClick={() => aoDeletar(agente.id)} 
+                onClick={() => aoDeletar(agente.id)}
             />
-            <div className="cabecalho" style={{ backgroundColor: corDeFundo }}>
-                <img src={agente.imagem} alt={agente.nome} />
+            <div className="card-border-top">
             </div>
-            <div className="rodape">
-                <h4>{agente.nome}</h4>
-                <h5>{agente.funcao}</h5>
-                <div className='favoritar'>
-                    {agente.favorito
-                        ? <AiFillHeart size={33} onClick={favoritar} color='#ff0000' />
-                        : <AiOutlineHeart size={33} onClick={favoritar} />}
-                </div>
+            <div className="img" style={{backgroundImage: `url(${agente.imagem})`, backgroundSize: '130% 100%'}}>
             </div>
-        </div>)
+            <span> {agente.nome}</span>
+            <p className="job"> {agente.funcao}</p>
+            <button onClick={favoritar}> {agente.favorito
+                ? <AiFillHeart size={33} color='#ff0000' />
+                : <AiOutlineHeart size={33}/>}
+            </button>
+        </div>
+    )
 }
 
 export default Agente

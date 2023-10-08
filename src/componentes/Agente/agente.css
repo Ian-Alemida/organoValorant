@@ -1,50 +1,62 @@
-.agente {
-    position: relative;
+.card {
     width: 280px;
-    margin-bottom: 18px;
-}
-
-.agente .cabecalho {
-    background-color:  #F0F0F0;
-    border-radius: 10px 10px 0px 0px;
-    height: 160px;
-}
-.agente img {
-    width: 160px;
-    height: 155px;
-    border-radius: 50%;
+    border-radius: 18px;
+    box-shadow: 1px 5px 60px 0px #100a886b;
     position: relative;
-    bottom: -40px;
+    margin-bottom: 18px;
+    padding-bottom: 12px;
 }
 
-.agente .rodape {
-    background: #FFFFFF;
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.08);
-    border-radius: 0px 0px 10px 10px;
+.card .card-border-top {
+    width: 60%;
+    height: 3%;
+    background-color: black;
+    margin: auto;
+    border-radius: 0px 0px 15px 15px;
 }
 
-.agente .rodape h4 {
-    color: #6278F7;
-    font-size: 24px;
-    line-height: 22px;
+.card span {
     font-weight: bold;
-    padding-top: 60px;
-    margin-bottom: 8px;
+    color: black;
+    text-align: center;
+    display: block;
+    padding-top: 10px;
+    font-size: 30px;
 }
 
-.agente .rodape h5 {
-    font-size: 18px;
-    line-height: 22px;
-    color: #212121;
-    padding: 0 16px;
+.card .job {
+    font-weight: 400;
+    color: white;
+    display: block;
+    text-align: center;
+    padding: 9px 9px;
+    font-size: 16px;
 }
 
+.card .img {
+    width: 110px;
+    height: 120px;
+    border-radius: 15px;
+    box-shadow: 3px 6px 33px 0px #0000006b;
+    margin: auto;
+    margin-top: 15px;
+}
+
+.card button {
+    padding: 6px 21px;
+    margin: 12px auto;
+    border-radius: 8px;
+    border: none;
+    color: white;
+    font-weight: 600;
+    background-color: black;
+}
+
+.card button:hover {
+    background: #333;
+}
 .deletar{
     position: absolute;
-    right: -10px;
-    top: -10px;
-}
-
-.favoritar{
-    padding: 12px 0;
+    right: -8px;
+    top: -8px;
 }
