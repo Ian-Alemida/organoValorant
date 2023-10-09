@@ -27,7 +27,7 @@ function App() {
     {
       id: uuidv4(),
       nome: 'Controlador',
-      cor: '#2E0C41'
+      cor: '#58177D'
     },
   ])
 
