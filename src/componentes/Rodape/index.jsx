@@ -1,17 +1,18 @@
 import './rodape.css'
 import githubIcon from './github.svg'
+import linkedinIcon from './linkedin.svg'
 
 const Rodape = () => {
     return (<footer className="footer">
         <section>
             <ul>
                 <li>
-                    <a href="facebook.com" target="_blank">
-                        <img src="/imagens/linkedin.svg" alt="" />
+                    <a href="www.linkedin.com/in/ian-almeida-3a707a240" target="_blank" rel='noreferrer'>
+                        <img src={linkedinIcon} alt="" />
                     </a>
                 </li>
                 <li>
-                    <a href="twitter.com" target="_blank">
+                    <a href="https://github.com/Ian-Alemida" target="_blank" rel='noreferrer'>
                         <img src={githubIcon} alt="" />
                     </a>
                 </li>
