@@ -1,5 +1,5 @@
-
 import './rodape.css'
+import githubIcon from './github.svg'
 
 const Rodape = () => {
     return (<footer className="footer">
@@ -7,16 +7,16 @@ const Rodape = () => {
             <ul>
                 <li>
                     <a href="facebook.com" target="_blank">
-                        <img src="/imagens/facebook.png" alt="" />
+                        <img src="/imagens/linkedin.svg" alt="" />
                     </a>
                 </li>
                 <li>
                     <a href="twitter.com" target="_blank">
-                        <img src="/imagens/twitter.png" alt="" />
+                        <img src={githubIcon} alt="" />
                     </a>
                 </li>
                 <li>
-                    <a href="instagram.com" target="_blank">
+                    <a href="https://www.instagram.com/binary_jouney/?utm_source=qr" target="_blank" rel='noreferrer'>
                         <img src="/imagens/instagram.png" alt="" />
                     </a>
                 </li>

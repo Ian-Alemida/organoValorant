@@ -85,7 +85,7 @@ function App() {
       favorito: false,
       nome: "BREACH",
       funcao: 'Iniciador poderoso e versátil, sua principal função é desestabilizar e atordoar os inimigos com suas habilidades sísmicas',
-      imagem: 'https://www.alura.com.br/assets/img/lideres/juliana-amoasei.1647533644.jpeg',
+      imagem: 'https://yt3.ggpht.com/8GUGwU8MpiA4uLfPWjWUo-R3uANzrEKE3Go_uhdkVektkNQcdaVC-6AzclmtJzoq9YD4HKnUsS8=s900-c-k-c0x00ffffff-no-rj',
       classe: classes[1].nome
     },
     {
@@ -93,7 +93,7 @@ function App() {
       favorito: false,
       nome: "SOVA",
       funcao: "Iniciador caçador e rastreador, sua principal função é revelar e eliminar os inimigos com suas habilidades de arco e flecha e seu drone",
-      imagem: 'https://www.alura.com.br/assets/img/lideres/daniel-artine.1647533644.jpeg',
+      imagem: 'https://i.ytimg.com/vi/KpWAEyAi7rY/maxresdefault.jpg',
       classe: classes[1].nome
     },
     {
@@ -101,7 +101,7 @@ function App() {
       favorito: true,
       "nome": 'SKYE',
       funcao: 'Iniciadora naturalista e curandeira, sua função é guiar o time e curar os aliados com suas habilidades de animais mágicos',
-      imagem: '	https://www.alura.com.br/assets/img/lideres/guilherme-lima.1647533644.jpeg',
+      imagem: '	http://assets1.ignimgs.com/thumbs/userUploaded/2020/10/8/blog-1602202666808.jpg',
       classe: classes[1].nome
     },
     {
@@ -109,7 +109,7 @@ function App() {
       favorito: false,
       nome: 'FADE',
       funcao: 'Iniciador assustador e misterioso, sua principal função é rastrear e prender os inimigos com suas habilidades de medo',
-      imagem: 'https://www.alura.com.br/assets/img/lideres/paulo-silveira.1647533644.jpeg',
+      imagem: 'https://i.ytimg.com/vi/CsSWTWBAj90/maxresdefault.jpg',
       classe: classes[1].nome
     },
     {
@@ -117,7 +117,7 @@ function App() {
       favorito: false,
       nome: 'KAY/O',
       funcao: 'Iniciador robótico e implacável, sua principal função é neutralizar as habilidades dos inimigos com seus dispositivos EMP',
-      imagem: 'https://www.alura.com.br/assets/img/lideres/paulo-silveira.1647533644.jpeg',
+      imagem: 'https://pic.rutubelist.ru/video/99/74/9974f775a1e02d98c96a9af11a67b09f.jpg',
       classe: classes[1].nome
     },
     {
@@ -125,7 +125,7 @@ function App() {
       favorito: false,
       nome: 'GEKKO',
       funcao: 'Iniciador com criaturas caóticas, sua função é usar suas criaturas para causar dano, controlar o espaço e plantar ou desarmar a Spike',
-      imagem: 'https://www.alura.com.br/assets/img/lideres/paulo-silveira.1647533644.jpeg',
+      imagem: 'https://gamecuoi.com/wp-content/uploads/2023/04/valorant-gekko-cinematic.jpg',
       classe: classes[1].nome
     },
     {
@@ -133,7 +133,7 @@ function App() {
       favorito: false,
       nome: "Killjoy",
       funcao: "Sentinela e especialista em tecnologia, sua principal função é usar seus dispositivos para proteger áreas e neutralizar os inimigos",
-      imagem: 'https://www.alura.com.br/assets/img/lideres/juliana-amoasei.1647533644.jpeg',
+      imagem: 'https://i.ytimg.com/vi/2lFhhs08FK0/maxresdefault.jpg',
       classe: classes[2].nome
     },
     {
@@ -141,7 +141,7 @@ function App() {
       favorito: true,
       nome: "Cypher",
       funcao: "Sentinela e especialista em vigilância, sua principal função é usar suas câmeras e armadilhas para obter informações dos inimigos",
-      imagem: 'https://www.alura.com.br/assets/img/lideres/juliana-amoasei.1647533644.jpeg',
+      imagem: 'https://i.ytimg.com/vi/TZ3XR4UXnz0/maxresdefault.jpg?7857057827',
       classe: classes[2].nome
     },
     {
@@ -149,7 +149,7 @@ function App() {
       favorito: false,
       nome: "Sage",
       funcao: "Sentinela e especialista em cura e defesa, sua função é usar sua magia para restaurar a vida de seus aliados e impedir o avanço dos inimigos",
-      imagem: '	https://www.alura.com.br/assets/img/lideres/guilherme-lima.1647533644.jpeg',
+      imagem: 'https://www.comboinfinito.com.br/principal/wp-content/uploads/2020/07/valorant-gamelanders-campeonato.jpg',
       classe: classes[2].nome
     },
     {
@@ -157,7 +157,7 @@ function App() {
       favorito: false,
       nome: 'Chamber',
       funcao: 'Sentinela e especialista em armas, sua função é usar suas armas e seus teletransportes para abater os inimigos e se reposicionar',
-      imagem: 'https://www.alura.com.br/assets/img/lideres/paulo-silveira.1647533644.jpeg',
+      imagem: 'https://thumbnails.odycdn.com/optimize/s:1280:720/quality:85/plain/https://thumbnails.lbry.com/ydeZaTKcFpg',
       classe: classes[2].nome
     },
     {
@@ -165,7 +165,7 @@ function App() {
       favorito: false,
       nome: "Deadlock",
       funcao: "Sentinela e especialista em habilidades sônicas, sua função é usar seu Sensor Sônico e sua parede para detectar e desorientar os inimigos",
-      imagem: 'https://www.alura.com.br/assets/img/lideres/paulo-silveira.1647533644.jpeg',
+      imagem: 'https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt25b46ddecf1f9045/6493b865cb6702643e159496/062423_Val_EP7_Deadlock_Gameplay_Banner.jpg?auto=webp&disable=upscale&height=549',
       classe: classes[2].nome
     },
     {
@@ -181,7 +181,7 @@ function App() {
       favorito: false,
       nome: "Brimstone",
       funcao: "Controlador especialista em smokes, sua função é usar sua tecnologia orbital para apoiar seus aliados e bloquear a visão dos inimigos",
-      imagem: 'https://www.alura.com.br/assets/img/lideres/daniel-artine.1647533644.jpeg',
+      imagem: 'https://leet.hu/wp-content/uploads/2021/08/4720547.jpg',
       classe: classes[3].nome
     },
     {
@@ -189,7 +189,7 @@ function App() {
       favorito: false,
       nome: "Astra",
       funcao: "Controladora e especialista no mundo astral, sua função é usar seu poder cósmico para criar barreiras, puxões e explosões estelares",
-      imagem: '	https://www.alura.com.br/assets/img/lideres/guilherme-lima.1647533644.jpeg',
+      imagem: 'https://conteudo.imguol.com.br/c/entretenimento/60/2021/03/10/astra-valorant-1615387421270_v2_450x600.jpg',
       classe: classes[3].nome
     },
     {
@@ -197,7 +197,7 @@ function App() {
       favorito: false,
       nome: "Viper",
       funcao: "Controladora e especialista em veneno, sua principal função é usar seu arsenal químico para criar zonas tóxicas que enfraquecem os inimigos",
-      imagem: 'https://www.alura.com.br/assets/img/lideres/paulo-silveira.1647533644.jpeg',
+      imagem: 'https://i.pinimg.com/originals/54/2f/5d/542f5dbfeeee8744ca899279cce9152e.jpg',
       classe: classes[3].nome
     },
     {
@@ -205,7 +205,7 @@ function App() {
       favorito: true,
       nome: "Harbor",
       funcao: "Controlador e especialista em água, sua função é usar sua Onda, Bolha de Ar e sua Maré Alta para empurrar, prender e afogar os inimigos",
-      imagem: 'https://www.alura.com.br/assets/img/lideres/paulo-silveira.1647533644.jpeg',
+      imagem: 'https://img.redbull.com/images/c_crop,w_1140,h_570,x_0,y_0,f_auto,q_auto/c_scale,w_1200/redbullcom/2023/1/24/ngljfqaupmiywuqas5tl/harbor-valorant',
       classe: classes[3].nome
     },
   ])

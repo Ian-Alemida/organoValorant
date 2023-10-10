@@ -19,7 +19,7 @@ function Agente({ agente, corDeFundo, aoDeletar, aoFavoritar }) {
             <span> {agente.nome}</span>
             <p className="job"> {agente.funcao}</p>
             <button onClick={favoritar}> {agente.favorito
-                ? <AiFillHeart size={33} color='#ff0000' />
+                ? <AiFillHeart size={33} color='#FD4556' />
                 : <AiOutlineHeart size={33}/>}
             </button>
         </div>
