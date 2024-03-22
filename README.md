@@ -1,70 +1,22 @@
-# Getting Started with Create React App
+# OrganoValorant
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Aplicativo em React voltado para a criação de organogramas que representam personagens e classes do famoso jogo FPS online Valorant. O objetivo principal foi adquirir experiência e aprofundar o entendimento em formulários, objetos de dados e sua interação, especialmente no contexto do gerenciamento de estados para passagem de informações entre componentes e construção dinâmica de cards.
 
-## Available Scripts
+## Principais Funcionalidades:
+- Criação de Organogramas: Os usuários podem criar organogramas personalizados para personagens e classes do Valorant, organizando informações de forma visualmente clara e intuitiva.
+- Gerenciamento de Estados: Utilizei o gerenciamento de estados do React para manter a integridade e a sincronia dos dados entre os diferentes componentes da aplicação, garantindo uma experiência coesa.
+- Integração de Bibliotecas Externas: Para aprimorar a funcionalidade e o design, integrei bibliotecas externas como 'hex-to-rgba' para manipulação de cores, 'react-icons' para inclusão de ícones e 'uuid' para geração de identificadores únicos.
 
-In the project directory, you can run:
+## Tecnologias e Conceitos Utilizados:
+- React: Plataforma principal para o desenvolvimento da aplicação, aproveitando sua eficiência e facilidade de uso na criação de interfaces interativas.
+- Formulários Controlados: Implementei formulários controlados para capturar e validar dados dos usuários durante a criação dos organogramas.
+- Passagem de Props: Utilizei a passagem de props para transmitir informações entre os componentes, mantendo a coesão e a modularidade do código.
+- Dinamicidade na Construção de Cards: Através do gerenciamento de estados e renderização condicional, possibilitamos a construção dinâmica de cards conforme as interações dos usuários.
 
-### `npm start`
+## Impacto e Aprendizados:
+Esse projeto não apenas fortaleceu minhas habilidades técnicas em React, mas também ampliou meu conhecimento em estruturas de dados, comunicação entre componentes e integração de bibliotecas externas, aspectos essenciais para o desenvolvimento de aplicações web robustas e escaláveis.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Bibliotecas Utilizadas:
+- 'hex-to-rgba': Para manipulação de cores e estilização avançada.
+- 'react-icons': Para inclusão de ícones relacionados ao Valorant.
+- 'uuid': Para geração de identificadores únicos em componentes dinâmicos.
