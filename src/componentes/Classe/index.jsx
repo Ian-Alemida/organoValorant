@@ -1,4 +1,4 @@
-import Agente from '../Agente'
+import AgenteUI from '../Agente';
 import './classe.css'
 import hexToRgba from 'hex-to-rgba';
 
@@ -10,12 +10,12 @@ function Classe({ classe, agentes, aoDeletar, mudarCor, aoFavoritar }) {
             <h3 style={{ borderColor: classe.cor }}>{classe.nome}</h3>
             <div className='colaboradores'>
                 {agentes.map((agente, indice) => {
-                    return <Agente
+                    return <AgenteUI
                         aoFavoritar={aoFavoritar}
                         key={indice}
                         agente={agente}
                         corDeFundo={classe.cor}
-                        aoDeletar={aoDeletar} 
+                        aoDeletar={aoDeletar}
                     />;
                 })}
             </div>

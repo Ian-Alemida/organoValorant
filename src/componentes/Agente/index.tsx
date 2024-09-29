@@ -1,13 +1,14 @@
+import IAgente from '../../interfaces/IAgente';
 import './agente.css'
 import { AiFillCloseCircle, AiOutlineHeart, AiFillHeart } from 'react-icons/ai'
 
-/*interface AgenteProps{
-    agente: ;
-    corDeFundo: ;
-    aoDeletar: ;
-    aoFavoritar:
-}*/
-function Agente({ agente, corDeFundo, aoDeletar, aoFavoritar }) {
+interface AgenteProps{
+    agente: IAgente;
+    corDeFundo: string;
+    aoDeletar: (value: string) => void;
+    aoFavoritar: (value: string) => void;
+}
+export default function AgenteUI({ agente, corDeFundo, aoDeletar, aoFavoritar }: AgenteProps) {
     function favoritar() {
         aoFavoritar(agente.id)
     }
@@ -31,5 +32,3 @@ function Agente({ agente, corDeFundo, aoDeletar, aoFavoritar }) {
         </div>
     )
 }
-
-export default Agente
