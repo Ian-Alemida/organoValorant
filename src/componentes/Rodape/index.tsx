@@ -1,6 +1,4 @@
 import './rodape.css'
-import githubIcon from './github.svg'
-import linkedinIcon from './linkedin.svg'
 
 const Rodape = () => {
     return (<footer className="footer">
@@ -8,12 +6,12 @@ const Rodape = () => {
             <ul>
                 <li>
                     <a href="www.linkedin.com/in/ian-almeida-3a707a240" target="_blank" rel='noreferrer'>
-                        <img src={linkedinIcon} alt="" />
+                        <img src={'./linkedin.svg'} alt="" />
                     </a>
                 </li>
                 <li>
                     <a href="https://github.com/Ian-Alemida" target="_blank" rel='noreferrer'>
-                        <img src={githubIcon} alt="" />
+                        <img src={'./github.svg'} alt="" />
                     </a>
                 </li>
                 <li>

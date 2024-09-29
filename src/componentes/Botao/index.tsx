@@ -1,6 +1,9 @@
 import './botao.css'
 
-const Botao = ({texto}) => {
+interface BotaoProps {
+    texto: string
+}
+const Botao = ({texto}: BotaoProps) => {
     return <button className="botao">
         {texto}
     </button>
