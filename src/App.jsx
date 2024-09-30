@@ -214,43 +214,43 @@ function App() {
     setAgentes(agentes.filter(agente => agente.id !== id));
   }
 
-  function mudarCorClasse( cor, id) {
+  function mudarCorClasse(cor, id) {
     setClasses(classes.map(classe => {
-        if(classe.id === id) {
-          classe.cor = cor;
-        }
-        return classe;
+      if (classe.id === id) {
+        classe.cor = cor;
+      }
+      return classe;
     }));
   }
 
-  function criarNovaClasse (novaClasse) {
-    setClasses([...classes, {...novaClasse, id:uuidv4}])
+  function criarNovaClasse(novaClasse) {
+    setClasses([...classes, { ...novaClasse, id: uuidv4 }])
   }
 
-  function changeFavorito (id){
+  function changeFavorito(id) {
     setAgentes(agentes.map(agente => {
-      if(agente.id === id) agente.favorito = !agente.favorito
-        return agente
+      if (agente.id === id) agente.favorito = !agente.favorito
+      return agente
     }))
   }
   return (
     <div>
       <Banner />
-      <Formulario 
+      <Formulario
         novaClasse={criarNovaClasse}
-        classes={classes.map(classe => classe.nome)}
-        aoCadastrar={novoAgente => setAgentes([...agentes, novoAgente])} 
+        classes={classes}
+        aoCadastrar={novoAgente => setAgentes([...agentes, novoAgente])}
       />
       <section className="times">
         <h1>Classes do Valorant</h1>
         {classes.map((classe, indice) =>
-          <Classe 
+          <Classe
             aoFavoritar={changeFavorito}
             mudarCor={mudarCorClasse}
             aoDeletar={deletarAgente}
             key={indice}
             classe={classe}
-            agentes={agentes.filter(agente => agente.classe === classe.nome)} 
+            agentes={agentes.filter(agente => agente.classe === classe.nome)}
           />
         )}
       </section>

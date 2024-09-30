@@ -1,8 +1,16 @@
+import IAgente from '../../interfaces/IAgente';
 import AgenteUI from '../Agente';
 import './classe.css'
 import hexToRgba from 'hex-to-rgba';
 
-function Classe({ classe, agentes, aoDeletar, mudarCor, aoFavoritar }) {
+interface Classeprops {
+    classe: IAgente;
+    agentes: IAgente[];
+    aoDeletar: () => void;
+    mudarCor: (value: string, id: string) => void;
+    aoFavoritar:() => void
+}
+function Classe({ classe, agentes, aoDeletar, mudarCor, aoFavoritar }: Classeprops) {
 
     return (
         agentes.length > 0 && <section className='time' style={{ backgroundImage: 'url(/imagens/fundo.png)', backgroundColor: hexToRgba(classe.cor, '0.5') }}>

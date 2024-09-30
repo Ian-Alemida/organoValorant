@@ -1,8 +1,9 @@
 export default interface IAgente {
-    cor: String,
+    cor: string,
     favorito: boolean,
     nome: string,
     imagem: string,
     funcao: string,
-    id: string
+    id: string,
+    key: string | React.Key | null | undefined
 }
