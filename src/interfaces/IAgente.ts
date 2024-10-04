@@ -1,10 +1,10 @@
 export default interface IAgente {
-    cor: string,
+    cor?: string,
     classe: string,
-    favorito: boolean,
+    favorito?: boolean,
     nome: string,
     imagem: string,
     funcao: string,
-    id: string,
-    key: string | React.Key | null | undefined
+    id?: string,
+    key?: string | React.Key | null | undefined
 }

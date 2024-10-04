@@ -3,23 +3,30 @@ import Botao from '../Botao'
 import Campo from '../Campo'
 import ListaSuspensa from '../ListaSuspensa'
 import './formulario.css'
+import IAgente from '../../interfaces/IAgente'
+import IClasse from '../../interfaces/IClasse'
 
-const Formulario = ({aoCadastrar, classes, novaClasse}) => {
+interface FormularioProps{
+    aoCadastrar: (agente: IAgente) => void,
+    classes: IAgente[],
+    novaClasse: (newClass: IClasse) => void
+}
+const Formulario = ({aoCadastrar, classes, novaClasse}: FormularioProps) => {
 
-    const [nome, setNome] = useState('')
-    const [funcao, setFuncao] = useState('')
-    const [imagem, setImagem] = useState('')
-    const [classe, setClasse] = useState('')
-    const [nomeClasse, setNomeClasse] = useState('')
-    const [corClasse, setCorClasse] = useState('')
+    const [nome, setNome] = useState<string>('')
+    const [funcao, setFuncao] = useState<string>('')
+    const [imagem, setImagem] = useState<string>('')
+    const [classe, setClasse] = useState<string>('')
+    const [nomeClasse, setNomeClasse] = useState<string>('')
+    const [corClasse, setCorClasse] = useState<string>('')
 
-    const aoSubmeter = (evento) => {
+    const aoSubmeter = (evento: React.FormEvent<HTMLFormElement>) => {
         evento.preventDefault()
         aoCadastrar({
             nome,
             funcao,
             imagem,
-            classe
+            classe,
         })
         setNome('')
         setFuncao('')
@@ -32,19 +39,23 @@ const Formulario = ({aoCadastrar, classes, novaClasse}) => {
             <form className="formulario" onSubmit={aoSubmeter}>
                 <h2>Preencha os dados para criar o card do agente.</h2>
                 <Campo
+                    type='text'
                     obrigatorio={true}
                     label='Nome'
                     placeholder='Digite seu nome '
                     valor={nome}
                     aoAlterado={valor => setNome(valor)}/>
                 <Campo
-                    obrigatorio={true}
+                    type='text'
+                    obrigatorio
                     label='Função' 
                     placeholder='Digite sua função '
                     valor={funcao}
                     aoAlterado={valor => setFuncao(valor)}/>
                 <Campo 
+                    type='text'
                     label='Imagem' 
+                    valor={imagem}
                     placeholder='Informe o endereço da imagem '
                     aoAlterado={valor => setImagem(valor)}/>
                 <ListaSuspensa 
@@ -69,7 +80,6 @@ const Formulario = ({aoCadastrar, classes, novaClasse}) => {
                     aoAlterado={valor => setNomeClasse(valor)}
                 />
                 <Campo
-                    type={'color'}
                     obrigatorio
                     label='Cor Da Classe' 
                     placeholder='Digite a cor da classe '
