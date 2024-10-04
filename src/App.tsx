@@ -4,6 +4,9 @@ import Formulario from "./componentes/Formulario";
 import Rodape from "./componentes/Rodape";
 import Classe from "./componentes/Classe";
 import { v4 as uuidv4 } from 'uuid';
+import IClasse from './interfaces/IClasse'
+import IAgente from "./interfaces/IAgente";
+
 
 function App() {
 
@@ -210,11 +213,11 @@ function App() {
     },
   ])
 
-  function deletarAgente(id) {
+  function deletarAgente(id: string) {
     setAgentes(agentes.filter(agente => agente.id !== id));
   }
 
-  function mudarCorClasse(cor, id) {
+  function mudarCorClasse(cor: string, id: string) {
     setClasses(classes.map(classe => {
       if (classe.id === id) {
         classe.cor = cor;
@@ -223,11 +226,11 @@ function App() {
     }));
   }
 
-  function criarNovaClasse(novaClasse) {
-    setClasses([...classes, { ...novaClasse, id: uuidv4 }])
+  function criarNovaClasse(novaClasse: IClasse) {
+    setClasses([...classes, { ...novaClasse, id: uuidv4() }])
   }
 
-  function changeFavorito(id) {
+  function changeFavorito(id: string) {
     setAgentes(agentes.map(agente => {
       if (agente.id === id) agente.favorito = !agente.favorito
       return agente
@@ -239,7 +242,10 @@ function App() {
       <Formulario
         novaClasse={criarNovaClasse}
         classes={classes}
-        aoCadastrar={novoAgente => setAgentes([...agentes, novoAgente])}
+        aoCadastrar={(novoAgente: IAgente) => {
+          const agenteComFavorito = { ...novoAgente, favorito: novoAgente.favorito ?? false, funcao: novoAgente.funcao ?? '',imagem: novoAgente.imagem ?? '', classe: novoAgente.classe ?? '', id: novoAgente.id ?? '', cor: novoAgente.cor ?? '',};
+          setAgentes([...agentes, agenteComFavorito])
+        }}
       />
       <section className="times">
         <h1>Classes do Valorant</h1>

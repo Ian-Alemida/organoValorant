@@ -6,11 +6,11 @@ interface AgenteProps{
     agente: IAgente;
     corDeFundo: string;
     aoDeletar: (value: string) => void;
-    aoFavoritar: (value: string) => void;
+    aoFavoritar: (id: string) => void;
 }
 export default function AgenteUI({ agente, corDeFundo, aoDeletar, aoFavoritar }: AgenteProps) {
     function favoritar() {
-        aoFavoritar(agente.id)
+        return () => aoFavoritar(agente.id)
     }
     return (
         <div className="card" style={{ backgroundColor: corDeFundo }}>
@@ -25,7 +25,7 @@ export default function AgenteUI({ agente, corDeFundo, aoDeletar, aoFavoritar }:
             </div>
             <span> {agente.nome}</span>
             <p className="job"> {agente.funcao}</p>
-            <button onClick={favoritar}> {agente.favorito
+            <button onClick={favoritar()}> {agente.favorito
                 ? <AiFillHeart size={33} color='#FD4556' />
                 : <AiOutlineHeart size={33} />}
             </button>

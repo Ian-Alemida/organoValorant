@@ -5,6 +5,7 @@ import ListaSuspensa from '../ListaSuspensa'
 import './formulario.css'
 import IAgente from '../../interfaces/IAgente'
 import IClasse from '../../interfaces/IClasse'
+import { v4 as uuidv4 } from 'uuid';
 
 interface FormularioProps{
     aoCadastrar: (agente: IAgente) => void,
@@ -27,6 +28,7 @@ const Formulario = ({aoCadastrar, classes, novaClasse}: FormularioProps) => {
             funcao,
             imagem,
             classe,
+            id: uuidv4()
         })
         setNome('')
         setFuncao('')

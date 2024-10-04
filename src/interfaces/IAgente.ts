@@ -5,6 +5,6 @@ export default interface IAgente {
     nome: string,
     imagem?: string,
     funcao?: string,
-    id?: string,
+    id: string,
     key?: string | React.Key | null | undefined
 }
