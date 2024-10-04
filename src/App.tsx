@@ -243,7 +243,7 @@ function App() {
         novaClasse={criarNovaClasse}
         classes={classes}
         aoCadastrar={(novoAgente: IAgente) => {
-          const agenteComFavorito = { ...novoAgente, favorito: novoAgente.favorito ?? false, funcao: novoAgente.funcao ?? '',imagem: novoAgente.imagem ?? '', classe: novoAgente.classe ?? '', id: novoAgente.id ?? '', cor: novoAgente.cor ?? '',};
+          const agenteComFavorito = { ...novoAgente, favorito: novoAgente.favorito ?? false, funcao: novoAgente.funcao ?? '',imagem: novoAgente.imagem ?? '', classe: novoAgente.classe ?? '', id: novoAgente.id ?? '',};
           setAgentes([...agentes, agenteComFavorito])
         }}
       />

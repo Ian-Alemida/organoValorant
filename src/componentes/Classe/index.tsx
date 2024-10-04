@@ -1,14 +1,15 @@
 import IAgente from '../../interfaces/IAgente';
+import IClasse from '../../interfaces/IClasse';
 import AgenteUI from '../Agente';
 import './classe.css'
 import hexToRgba from 'hex-to-rgba';
 
 interface Classeprops {
-    classe: IAgente;
+    classe: IClasse;
     agentes: IAgente[];
-    aoDeletar: () => void;
+    aoDeletar: (id: string) => void;
     mudarCor: (value: string, id: string) => void;
-    aoFavoritar:() => void
+    aoFavoritar:(id: string) => void
 }
 function Classe({ classe, agentes, aoDeletar, mudarCor, aoFavoritar }: Classeprops) {
 

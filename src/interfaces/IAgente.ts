@@ -1,5 +1,4 @@
 export default interface IAgente {
-    cor?: string,
     classe?: string,
     favorito?: boolean,
     nome: string,
