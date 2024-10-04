@@ -7,7 +7,6 @@ import { v4 as uuidv4 } from 'uuid';
 import IClasse from './interfaces/IClasse'
 import IAgente from "./interfaces/IAgente";
 
-
 function App() {
 
   const [classes, setClasses] = useState([

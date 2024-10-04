@@ -1,7 +1,7 @@
 import './campo.css'
 
 interface CampoProps {
-    type?: 'text' | 'boolean' | "number" | "date";
+    type?: 'text' | 'boolean' | "number" | "date" | "color";
     label: string;
     placeholder: string;
     valor: string;

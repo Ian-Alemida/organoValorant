@@ -70,7 +70,7 @@ const Formulario = ({aoCadastrar, classes, novaClasse}: FormularioProps) => {
             </form>
             <form className="formulario" onSubmit={(e) => {
                 e.preventDefault()
-                novaClasse({ nome: nomeClasse, cor: corClasse})
+                novaClasse({ nome: nomeClasse, cor: corClasse, id: uuidv4()})
                 setNomeClasse('')
             }}>
                 <h2>Preencha os dados para criar uma nova classe</h2>
@@ -83,6 +83,7 @@ const Formulario = ({aoCadastrar, classes, novaClasse}: FormularioProps) => {
                 />
                 <Campo
                     obrigatorio
+                    type='color'
                     label='Cor Da Classe' 
                     placeholder='Digite a cor da classe '
                     valor={corClasse}
