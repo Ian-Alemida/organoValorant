@@ -1,22 +1,26 @@
 # OrganoValorant
 
-Aplicativo em React voltado para a criação de organogramas que representam personagens e classes do famoso jogo FPS online Valorant. O objetivo principal foi adquirir experiência e aprofundar o entendimento em formulários, objetos de dados e sua interação, especialmente no contexto do gerenciamento de estados para passagem de informações entre componentes e construção dinâmica de cards.
+O aplicativo foi construído com React e TypeScript, focando na criação de organogramas que representam personagens e classes do popular jogo FPS online Valorant. O uso de TypeScript trouxe uma camada adicional de tipagem estática, garantindo maior robustez no desenvolvimento, além de facilitar o controle de estados e a troca de informações entre componentes. O projeto teve como objetivo aprimorar o entendimento sobre formulários, manipulação de objetos de dados e a construção dinâmica de cards, com ênfase no gerenciamento de estados e na interação entre os diferentes elementos do sistema.
 
 ## Principais Funcionalidades:
+
 - Criação de Organogramas: Os usuários podem criar organogramas personalizados para personagens e classes do Valorant, organizando informações de forma visualmente clara e intuitiva.
-- Gerenciamento de Estados: Utilizei o gerenciamento de estados do React para manter a integridade e a sincronia dos dados entre os diferentes componentes da aplicação, garantindo uma experiência coesa.
+- Gerenciamento de Estados: Utilizei o gerenciamento de estados do React aliado ao TypeScript, garantindo a integridade e a sincronia dos dados entre os diferentes componentes da aplicação. O uso de tipos garantiu maior segurança ao manipular os estados, prevenindo erros comuns e proporcionando uma experiência coesa.
 - Integração de Bibliotecas Externas: Para aprimorar a funcionalidade e o design, integrei bibliotecas externas como 'hex-to-rgba' para manipulação de cores, 'react-icons' para inclusão de ícones e 'uuid' para geração de identificadores únicos.
 
 ## Tecnologias e Conceitos Utilizados:
-- React: Plataforma principal para o desenvolvimento da aplicação, aproveitando sua eficiência e facilidade de uso na criação de interfaces interativas.
-- Formulários Controlados: Implementei formulários controlados para capturar e validar dados dos usuários durante a criação dos organogramas.
-- Passagem de Props: Utilizei a passagem de props para transmitir informações entre os componentes, mantendo a coesão e a modularidade do código.
+
+- React e TypeScript: A aplicação foi construída utilizando React, com a adição do TypeScript para garantir tipagem estática, facilitando a manutenção e prevenindo erros durante o desenvolvimento.
+- Formulários Controlados: Implementei formulários controlados, utilizando TypeScript para validar os dados de forma eficiente e garantir que as entradas dos usuários estivessem dentro dos tipos definidos, proporcionando maior confiabilidade ao sistema.
+- Passagem de Props: A passagem de props entre componentes foi tipada utilizando TypeScript, o que garantiu que as informações trocadas entre os componentes fossem coerentes com os tipos esperados, melhorando a modularidade e segurança do código.
 - Dinamicidade na Construção de Cards: Através do gerenciamento de estados e renderização condicional, possibilitamos a construção dinâmica de cards conforme as interações dos usuários.
 
 ## Impacto e Aprendizados:
-Esse projeto não apenas fortaleceu minhas habilidades técnicas em React, mas também ampliou meu conhecimento em estruturas de dados, comunicação entre componentes e integração de bibliotecas externas, aspectos essenciais para o desenvolvimento de aplicações web robustas e escaláveis.
+
+Esse projeto não apenas fortaleceu minhas habilidades técnicas em React, mas também ampliou significativamente meu conhecimento em TypeScript, estruturas de dados, comunicação segura entre componentes e integração de bibliotecas externas. O uso de TypeScript foi essencial para garantir a robustez e escalabilidade da aplicação, prevenindo erros e facilitando o desenvolvimento de funcionalidades mais complexas.
 
 ## Bibliotecas Utilizadas:
+
 - 'hex-to-rgba': Para manipulação de cores e estilização avançada.
 - 'react-icons': Para inclusão de ícones relacionados ao Valorant.
 - 'uuid': Para geração de identificadores únicos em componentes dinâmicos.
